@@ -78,7 +78,6 @@ func main() {
 		Capacity: 50,
 	}
 	items := generateItems(2) // generates a list of 10 items
-	profit := GetMaximumProfit(items, ship)
-	spew.Dump(profit)
-	spew.Dump(ship.Capacity)
+	profit := GetMaximumProfit(items, ship) - ship.Price
+
 }
